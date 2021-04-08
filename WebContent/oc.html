@@ -1,0 +1,19 @@
+<a href='http://localhost:8090/GmailReadOnly/GmailClient.html' id='mylink'>click me</a>
+
+<script>
+
+var myLink = document.getElementById('mylink');
+myLink.onclick = function(){
+
+handleClientLoad();
+checkAuth();
+handleAuthClick();
+handleAuthResult(authResult);
+loadGmailApi();
+displayInbox();
+
+}
+
+
+</script>
+

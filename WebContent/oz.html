@@ -1,0 +1,20 @@
+
+
+
+<button id="authorize-button" class="btn btn-primary">Authorize</button>
+<script type="text/javascript">
+
+var myLink = document.getElementById("authorize-button")
+
+myLink.onclick = function(){
+
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "/GmailReadOnly/GmailClient.html"; 
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;
+
+}
+
+
+</script>
